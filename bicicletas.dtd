@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--DTD para un documento XML que contiene una lista de bicicletas de una fábrica del polígono industrial de Salinetas (Telde).-->
+
+<!ELEMENT bicicletas (bicicleta+)>
+
+<!ELEMENT bicicleta (idBicicleta,modelo,tipo,componentes)>
+
+<!ELEMENT idBicicleta (#PCDATA)>
+
+<!ELEMENT modelo (#PCDATA)>
+
+<!ELEMENT tipo (#PCDATA)> <!-- Que puede ser PASEO, CARRERAS, INFANTIL, etc...   -->
+
+<!ELEMENT componentes (componente+)>
+
+<!ELEMENT componente (idComponente,nombreComponente,fabricacionPropia,costo)>
+
+<!ELEMENT idComponente (#PCDATA)>
+
+<!ELEMENT fabricacionPropia (#PCDATA)> <!-- Puede ser SI ó NO.   -->
+
+<!ELEMENT nombreComponente (#PCDATA)>
+
+<!ELEMENT costo (#PCDATA)> <!-- Cantidad de Euros de costo del componente   -->
